@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Rectangle from "./component/rectangle";
+import Block from "./component/block";
+import Blockclick from "./component/blockclick";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Rectangle/>
+            <Rectangle/>
+            <Rectangle/>
+            <Rectangle/>
+            <Block borderColor={"red"} backColor={"yellow"}/>
+            <Block borderColor={"orange"} backColor={"navy"}/>
+            <Block borderColor={"green"} backColor={"pink"}/>
+            <Blockclick/>
+            <Blockclick/>
+            <Blockclick/>
+        </div>
+    );
+
 }
+
 
 export default App;
